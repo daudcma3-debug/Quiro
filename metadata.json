@@ -1,0 +1,6 @@
+{
+  "name": "Quiro Staffing",
+  "description": "Premium offshore accounting and finance staffing partner connecting US and UK businesses with Pakistan's top 1% accounting talent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

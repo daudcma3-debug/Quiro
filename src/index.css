@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #081C3A;
+  --color-brand-gold: #C7A35A;
+  --color-brand-dark: #051226;
+  --color-brand-cream: #FCFAF6;
+  --color-brand-gray: #F4F6F9;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-manrope: "Manrope", system-ui, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #051226;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7A35A;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B69249;
+}
+
+/* Custom styles for luxury styling and elements */
+@layer utilities {
+  .gold-gradient-bg {
+    background: linear-gradient(135deg, #C7A35A 0%, #E8D5A7 50%, #B59148 100%);
+  }
+  .navy-gradient-bg {
+    background: linear-gradient(135deg, #081C3A 0%, #0c2b59 50%, #051226 100%);
+  }
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #E8D5A7 0%, #C7A35A 50%, #9C7E41 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .navy-text-gradient {
+    background: linear-gradient(135deg, #081C3A 0%, #051226 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gold-glow {
+    box-shadow: 0 4px 20px -2px rgba(199, 163, 90, 0.2);
+  }
+  .gold-border-glow:hover {
+    border-color: #C7A35A;
+    box-shadow: 0 0 15px rgba(199, 163, 90, 0.15);
+  }
+}
+
+/* For smooth scroll and nice selection highlights */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-jakarta);
+}
+
+::selection {
+  background-color: #C7A35A;
+  color: #081C3A;
+}
